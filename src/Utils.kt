@@ -5,12 +5,12 @@ import java.security.MessageDigest
 /**
  * Reads lines from the given input txt file.
  */
-fun readInput(name: String) = File("src", "$name.txt").readLines()
+fun readInput(name: String, folder: String) = File("src/$folder", "$name.txt").readLines()
 
 /**
  * Reads lines from the given input txt file.
  */
-fun readInputInt(name: String) = File("src", "$name.txt").readLines().map { it.toInt() }
+fun readInputInt(name: String, folder: String) = File("src/$folder", "$name.txt").readLines().map { it.toInt() }
 
 /**
  * Converts string to md5 hash.

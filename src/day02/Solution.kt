@@ -1,3 +1,7 @@
+package day02
+
+import readInput
+
 private fun calculatePosition(movement: String): Pair<Int, Int>{
     val parts = movement.split(" ")
     val direction = parts[0]
@@ -12,6 +16,8 @@ private fun calculatePosition(movement: String): Pair<Int, Int>{
 }
 
 fun main() {
+    val day = "02"
+
     fun part1(input: List<String>): Int {
 
         var x = 0
@@ -48,11 +54,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day02_test")
+    val testInput = readInput("Input_test", "day$day")
     check(part1(testInput) == 150)
     check(part2(testInput) == 900)
 
-    val input = readInput("Day02")
+    val input = readInput("Input", "day$day")
     println(part1(input))
     println(part2(input))
  }
