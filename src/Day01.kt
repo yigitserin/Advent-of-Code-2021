@@ -1,9 +1,4 @@
-package day01
-
-import readInputInt
-
 fun main() {
-    val day = "01"
     fun part1(input: List<Int>): Int {
         var result = -1
         var lastTotal = 0
@@ -36,11 +31,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInputInt("Input_test", "day$day")
+    val testInput = readInputInt("Day01_test")
     check(part1(testInput) == 7)
     check(part2(testInput) == 5)
 
-    val input = readInputInt("Input", "day$day")
+    val input = readInputInt("Day01")
     println(part1(input))
     println(part2(input))
  }
