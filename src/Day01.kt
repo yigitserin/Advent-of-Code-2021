@@ -38,4 +38,4 @@ fun main() {
     val input = readInputInt("Day01")
     println(part1(input))
     println(part2(input))
- }
+}

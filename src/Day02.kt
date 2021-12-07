@@ -42,7 +42,7 @@ fun main() {
     val input = readInput("Day02")
     println(part1(input))
     println(part2(input))
- }
+}
 
 private fun calculatePosition(movement: String): Pair<Int, Int>{
     val parts = movement.split(" ")

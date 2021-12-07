@@ -19,7 +19,7 @@ fun main() {
     val input = readInput("Day05")
     println(part1(input))
     println(part2(input))
- }
+}
 
 private fun getCoordinatePair(inputLine: String): CoordinatePair {
     val parts = inputLine.split(" -> ")

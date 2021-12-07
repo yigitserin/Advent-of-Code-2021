@@ -31,7 +31,7 @@ fun main() {
     val input = readInput("Day03")
     println(part1(input))
     println(part2(input))
- }
+}
 
 private fun getDigitAtIndex(mostCommon: Boolean, index: Int, input: List<String>): Int {
 
